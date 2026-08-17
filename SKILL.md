@@ -1,9 +1,9 @@
 ---
-name: uom-rcp-skill
+name: unimelb-rcp-skill
 description: Operate, explain, and troubleshoot University of Melbourne Research Computing Services (RCS), including the Research Computing Portal (RCP), Researcher Desktop and Research Server, Melbourne Research Cloud (MRC/OpenStack), Spartan HPC and Slurm, Mediaflux, DaRIS, NetApp storage, Omeka, NVivo, access, data transfer, and support escalation. Use when a UoM/UniMelb request concerns research compute, storage, SSH/RDP, GPUs, quotas, collaborators, or transfers; or when platform-specific names such as RCP, RCAO, Researcher Desktop/Server, MRC, Spartan, Open OnDemand, Mediaflux, DaRIS, or RCS support appear.
 ---
 
-# UoM Research Computing
+# UniMelb Research Computing
 
 Use official UoM procedures to select, provision, operate, and troubleshoot RCS compute and data services.
 
@@ -12,14 +12,15 @@ Use official UoM procedures to select, provision, operate, and troubleshoot RCS 
 1. Identify the service, resource owner, lifecycle stage, operating system, data source/destination, and whether the user wants guidance, diagnosis, or an authorized mutation.
 2. Read only the smallest relevant reference set:
    - Service selection, eligibility, RCAO/Activity concepts, external collaborators, Omeka, or support: [references/rcs-services.md](references/rcs-services.md).
-   - Researcher Desktop/Server, RDP/SSH, software, attached storage, GPU resizing, OS migration, boost, shelving, reboot, or deletion: [references/researcher-desktop.md](references/researcher-desktop.md).
+   - Researcher Desktop/Server, browser/RDP access, software, attached storage, GPU resizing, OS migration, boost, shelving, reboot, or deletion: [references/researcher-desktop.md](references/researcher-desktop.md).
+   - SSH clients, host keys, passwords/keys, SSH config, Researcher Desktop or Spartan login, agent forwarding, or connection failures: [references/ssh-access.md](references/ssh-access.md).
    - MRC Unmanaged Cloud, OpenStack Dashboard, allocations, projects, instances, images, flavors, volumes, security groups, public/private networking, or Nectar migration: [references/mrc-openstack.md](references/mrc-openstack.md).
    - Spartan account/project requests, collaborators, RCAO, password reset, or initial SSH access: [references/spartan-provisioning.md](references/spartan-provisioning.md).
    - Slurm scripts, partitions, jobs, modules, GPUs, monitoring, login-node policy, containers, data paths, or runtime failures: [references/spartan-operations.md](references/spartan-operations.md).
    - Mediaflux provisioning, clients, MFA/tokens, project roles/ACLs, metadata, versioning, recovery, or tape-tiered data: [references/mediaflux.md](references/mediaflux.md).
    - DaRIS access, object model, roles, portal, DICOM/NIfTI, shopping carts, command-line clients, or servlets: [references/daris.md](references/daris.md).
-   - Cross-system transfer, protocol/client choice, integrity checks, Spartan staging, SMB/NFS/SFTP/rsync/rclone/Data Mover, or NetApp storage: [references/data-transfer-storage.md](references/data-transfer-storage.md).
-3. For cross-service work, read both endpoint references plus the transfer reference. Example: Spartan → Mediaflux requires `spartan-operations.md`, `mediaflux.md`, and `data-transfer-storage.md`.
+   - Upload/download workflows, cross-system transfer, protocol/client choice, `scp`/SFTP/rsync, Mediaflux clients, integrity checks, Spartan staging, SMB/NFS/rclone/Data Mover, or NetApp storage: [references/data-transfer-storage.md](references/data-transfer-storage.md).
+3. For cross-service work, read both endpoint references plus the access/transfer reference. Example: local computer → Spartan needs `ssh-access.md`, `spartan-operations.md`, and `data-transfer-storage.md`; Spartan ↔ Mediaflux needs `spartan-operations.md`, `mediaflux.md`, and `data-transfer-storage.md`.
 4. Distinguish control planes from runtime paths:
    - Use RCP to request and manage managed resources, Activities, allocations, and access.
    - Use the MRC/OpenStack Dashboard to manage unmanaged cloud projects and infrastructure.
