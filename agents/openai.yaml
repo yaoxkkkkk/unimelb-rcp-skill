@@ -1,4 +1,4 @@
 interface:
-  display_name: "UoM Research Computing"
-  short_description: "Operate UoM RCP, MRC, Spartan, Mediaflux, and DaRIS"
-  default_prompt: "Use $uom-rcp-skill to select, operate, or troubleshoot a University of Melbourne research computing or data service."
+  display_name: "UniMelb Research Computing"
+  short_description: "Operate UniMelb RCP, Spartan, Mediaflux, and DaRIS"
+  default_prompt: "Use $unimelb-rcp-skill to connect, transfer data, operate, or troubleshoot a University of Melbourne research computing service."
